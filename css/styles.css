@@ -173,6 +173,7 @@ form{
     margin-bottom: 5px;
 }
 
+/* Mejoras en diseño general*/
 @media (max-width: 768px){
     .contenedor-resumen{
         flex-direction: column;
