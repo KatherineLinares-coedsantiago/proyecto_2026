@@ -1,0 +1,221 @@
+/* Reset universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* selectores para el cuerpo del HTML.*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+}
+
+/*Encabezado*/
+header{
+   background-color: beige;
+   color: rgb(255, 200, 208);
+   text-align: center;
+   
+}
+
+/*Menú*/
+.menu-list{
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* Panel de control*/
+main{
+   margin-bottom: 30px;
+   margin-top: 30px;
+   margin-left: 30px;
+   margin-right: 30px;
+   display: flex;
+   justify-content: space-around;
+}
+
+/*subpanel*/
+section{
+    margin-bottom: 30px;
+}
+
+/*Tabla de productos*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Encabezados de tabla*/
+th{
+    background-color: beige;
+    color: rgb(233, 148, 159);
+    padding: 12px;
+}
+
+/*Celdas de tabla*/
+td{
+    border: 1px solid #f89fd3;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+
+/*Formulario*/
+input{
+    padding: 10px;
+    border: 1px solid #c96396;
+    border-radius: 5px;
+    color: #d15c97;
+    
+}
+
+input:hover{
+    border: 2px solid #f78cc1;
+    transition: 0.1s;
+    box-shadow: 0 0 10px(0, 0, 0, 0.2);
+}
+
+input:focus{
+    border: 2px solid #f78cc1;
+    outline: none;
+    box-shadow: 0 0 10px(0, 0, 0, 0.2);
+}
+
+button:hover{
+    background-color: #eea1ce;
+    cursor: pointer;
+    transition: 0.1s;
+    color: white;
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
+button{
+    color: #d15c97;
+    border: 1px solid #c96396;
+    padding: 10px;
+     border-radius: 5px;
+}
+
+input:invalid:not(:placeholder-shown){
+    border: 2px solid #f78cc1;
+}
+
+
+tbody tr:hover{
+    background-color: #f8d7e8;
+    cursor: pointer;
+}
+
+
+form{
+    box-shadow: 0 0 10px #ee6fb5;
+    box-shadow: #e777b5;
+    border: 1px solid rgb(241, 145, 213);
+    padding: 25px;
+    padding-bottom: 30px;
+    box-shadow: #f7c4d8;
+    background-color: beige;
+    color: rgb(226, 115, 134);
+}
+
+/*Resumen de Kardex*/
+/*Diseño flexible del dasjboard*/
+.contenedor-resumen{
+    gap: 20px;
+    flex-wrap:wrap;
+    flex: 1;
+    padding: 20px;
+    border:2px solid #f893d1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Productos{
+    gap: 20px;
+    flex-wrap:wrap;
+    flex: 1;
+    padding: 20px;
+    border:2px solid #f892ce;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.Ventas{
+    gap: 20px;
+    flex-wrap:wrap;
+    flex: 1;
+    padding: 20px;
+    border:2px solid #f790dd;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.Usuarios{
+    gap: 20px;
+    flex-wrap:wrap;
+    flex: 1;
+    padding: 20px;
+    border:2px solid #f384af;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px){
+    .contenedor-resumen{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+        border:2px solid #f78ec7;
+    }
+    .tarjeta{
+        width: 100%;
+        margin-bottom: 15px;
+        border:2px solid #f798c4;
+    }
+    p{
+        font-size: 1.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .columna-eliminada{
+        display: none;
+    }
+    header{
+        background-color: rgb(241, 218, 222);
+    }
+    .Guardar-Inventario{
+        width: 100%;
+         background-color: #f78cc1;
+         color: white;
+         border: none;
+         padding: 10px;
+    }
+    .Registrarse{
+            background-color: #facee4;
+            color: white;
+            padding: 1px;
+   }
+}
+
+   .tabla-responsiva{
+        width: 100%;
+        overflow-x: auto;
+   }
+
+   .mitabla{
+    margin-bottom: 15px;
+   }
+
+

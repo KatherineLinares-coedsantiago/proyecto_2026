@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Flowers</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="miinicio" border="1">
+    <h1>Melody Flowers</h1><img src="assets/img/My_melody.jpg" alt="Logo de corporativo"width="300" height="300">
+  </header> 
+  <nav class="menu">
+    <!--Lista desordenada-->
+    <ul class="menu-list">
+      <li><a href="#miinicio">Inicio</a></li>
+      <li><a href="#mitabla">Inventario</a></li>
+      <li><a href="#miformulario">Formulario</a></li>
+    </ul>
+  </nav> 
+  <main>
+    <section>
+        <h2>Panel de control</h2>
+        <p>Descubre la magia de las flores con nuestra colección única de flores frescas y hermosas.</p>
+    </section>
+  </main>
+  <!--Formulario de registro de productos-->
+  <form id="miformulario" border="1" action="registro.php" method="post">
+    <label for="txtnombre">Nombre:</label>
+    <input type="text" id="txtnombre" name="nombre_prod" required><br><br>
+    <label for="numStock">Cantidad:</label>
+    <input type="number" id="numStock" name="stock_prod" min="1" required><br><br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="selCat">Categoría:</label>
+    <select name="" id="selCat">
+        <option value="1">Alimentos</option>
+        <option value="2">Limpieza</option>
+    </select><br><br>
+    <label for="fecha">Fecha de ingreso:</label>
+    <input type="date" id="fecha" name="fecha_prod" required><br><br>
+    <label for="precio">Precio Unitario:</label>
+    <input type="number" id="precio" name="precio_prod" min="0" step="0.01" required><br><br>
+    <button class="Guardar-Inventario" type="submit">Guardar en Inventario</button>
+    <button type="reset">Limpiar</button>
+    <input class="Registrarse" type="submit" value="Registrarse"><br><br>
+  </form>
+  <!--Tabla de productos en stock-->
+  <div class="tabla-responsiva">
+    <table id="mitabla" border="1"> 
+      <thead>
+        <th class="columna-eliminada">Número</th>  
+        <th>Producto</th>
+        <th>Categoría</th>
+        <th>Cantidad</th>
+        <th></th>
+        <th></th>
+        <th>Imagen</th>
+    </thead>
+    <tbody>
+      <tr>
+          <td class="columna-eliminada">1</td>
+          <td>Jabón líquido</td>
+          <td>Limpieza</td>
+          <td>50</td>
+          <td><button>Editar</button></td>
+          <td><button>Eliminar</button></td>
+          <td><img src="assets/img/Jabón_liquido.webp" alt="Imagen del producto" width="100" height="100"></td>
+        </tr>
+        <tr>
+          <td class="columna-eliminada">2</td>
+          <td>Shampoo</td>
+          <td>Limpieza</td>
+          <td>100</td>
+          <td><button>Editar</button></td>
+          <td><button>Eliminar</button></td>
+          <td><img src="assets/img/Shampoo.jpg" alt="Imagen del producto" width="100" height="100"></td>
+        </tr>
+        <tr>
+          <td class="columna-eliminada">3</td>
+          <td>Desodorante</td>
+          <td>Higiene personal</td>
+          <td>75</td>
+          <td><button>Editar</button></td>
+          <td><button>Eliminar</button></td>
+          <td><img src="assets/img/Desodorante.avif" alt="Imagen del producto" width="100" height="100"></td>
+        </tr>
+        <tr>
+          <td class="columna-eliminada">4</td>
+          <td>Maquillaje</td>
+          <td>Cosmeticos</td>
+          <td>25</td>
+          <td><button>Editar</button></td>
+          <td><button>Eliminar</button></td>
+          <td><img src="assets/img/Maquillaje.webp" alt="Imagen del producto" width="100" height="100"></td>
+        </tr>
+        <tr>
+          <td class="columna-eliminada">5</td>
+          <td>Perfume</td>
+          <td>Higiene personal</td>
+          <td>30</td>
+          <td><button>Editar</button></td>
+          <td><button>Eliminar</button></td>
+          <td><img src="assets/img/Perfume.webp" alt="Imagen del producto" width="100" height="100"></td>
+        </tr>
+    </tbody>
+    </table>
+  </div>
+  <div class="contenedor-resumen">
+    <p>Resumen de productos</p>
+    <div class="tarjeta">
+      <p>Productos</p>
+    </div>
+    <div class="tarjeta">
+      <p>Ventas</p>
+    </div>
+    <div class="tarjeta">
+      <p>Usuarios</p>
+    </div>
+  </div>
+</body>
+<footer></footer>
+</html>
