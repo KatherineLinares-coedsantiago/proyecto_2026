@@ -203,6 +203,14 @@ form{
          border: none;
          padding: 10px;
     }
+
+    .limpiar{
+         background-color: #f78cc1;
+         color: white;
+         border: none;
+         padding: 10px;
+        width: 100%;
+    }
     .Registrarse{
             background-color: #facee4;
             color: white;
