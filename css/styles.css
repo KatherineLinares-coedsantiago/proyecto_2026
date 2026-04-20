@@ -78,13 +78,13 @@ input{
 input:hover{
     border: 2px solid #f78cc1;
     transition: 0.1s;
-    box-shadow: 0 0 10px(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 input:focus{
     border: 2px solid #f78cc1;
     outline: none;
-    box-shadow: 0 0 10px(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover{
