@@ -1,0 +1,6 @@
+--Insertamos 23 productos en la tabla productos.
+---INSERT INTO productos(nombre_prod,precio,stock,fecha_ingreso,id_categoria)
+--VALUES ('Girasoles',12.50,20,'2026-04-20',1),('Tulipanes',15.50,20,'2026-04-20',1),('Rosas',20.00,25,'2026-04-20',1),('Margaritas',18.00,30,'2026-04-20',1),('Lirios',25.00,30,'2026-04-20',1),('Orquídeas',30.00,15,'2026-04-20',1),('Claveles',10.00,25,'2026-04-20',1),('Gerberas',22.00,20,'2026-04-20',1),('Peonias',28.00,15,'2026-04-20',1),('Dalias',18.50,30,'2026-04-20',1),('Hortensias',45.00,35,'2026-04-20',1),('Lavanda',35.00,20,'2026-04-20',1),('Lisianthus',45.00,25,'2026-04-20',1),('Proteas',70.00,30,'2026-04-20',1),('Alstroemerias',12.00,20,'2026-04-20',1),('Anémonas',18.00,25,'2026-04-20',1),('Cala Lilies',25.00,15,'2026-04-20',1),('Fresias',10.00,30,'2026-04-20',1),('Gladiolos',15.00,20,'2026-04-20',1),('Ranúnculos',22.00,25,'2026-04-20',1);
+ SELECT * FROM productos;
+ --INSERT INTO productos(nombre_prod,precio,stock,fecha_ingreso,id_categoria)
+ --VALUES ('Veraneras',10.00,30,'2026-04-20',1);
