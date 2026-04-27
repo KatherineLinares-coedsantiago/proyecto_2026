@@ -12,7 +12,7 @@
     //Establecer conexión.
     $db_conn = pg_connect($cadenaConexion);
 
-    //Conprobar conexión.
+    //Conprobar conexión
     if (!$db_conn){
         die("Error de conexión con la Base de Datos".preg_last_error());
     }else{echo "Conexión exitosa a Melody Flowers";}
