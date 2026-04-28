@@ -26,4 +26,6 @@
         else{echo "Conexión exitosa a la BD";
     }
 
+    define(!defined('ACCESO')) die('Acceso denegado');
+
 ?>
