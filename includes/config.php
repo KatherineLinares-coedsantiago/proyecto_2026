@@ -26,11 +26,11 @@
             //Mensaje para el productor.
         die("Sistema en mantenimiento temporal");
         }
-        .
+
     } //Mensaje de conexión exitosa.
         else{echo "Conexión exitosa a la BD";
     }
 // Denegamos el acceso a usuarios.
-    define(!defined('ACCESO')) die('Acceso denegado');
+    //define(!defined('ACCESO')) die('Acceso denegado');
 
 ?>
