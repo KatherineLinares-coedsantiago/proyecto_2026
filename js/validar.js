@@ -1,3 +1,4 @@
+//
 const formulario = document.getElementById('agregar_producto');
 console.log("Sistema de validación activa");
 formulario.addEventListener('submit',function(e){
