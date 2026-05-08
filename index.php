@@ -22,6 +22,8 @@
     <input type="date" id="fecha" name="fecha"><br><br>
     <label for="precio">Precio Unitario:</label>
     <input type="number" id="precio" name="precio"><br><br>
+    <label for="txtEmail">Correo Electronico: </label>
+    <input type="text" id = "txtEmail" name = "txtEmail"><br><br>
     <button class="Guardar-Inventario" type="submit">Guardar en Inventario</button>
     <button class="limpiar" type="reset">Limpiar</button>
   </form>
