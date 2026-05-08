@@ -3,7 +3,7 @@ const patronTexto = /^[A-Za-z\s]+$/;
 const patronEmail = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/;
 const formulario = document.getElementById('agregar_producto');
 
-//La consola muestra la validación
+//La consola muestra la validación.
 console.log("Sistema de validación activo");
 
 //Validamos el formulario al intentar enviarlo.
