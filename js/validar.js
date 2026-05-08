@@ -3,8 +3,10 @@ const patronTexto = /^[A-Za-z\s]+$/;
 const patronEmail = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,6}$/;
 const formulario = document.getElementById('agregar_producto');
 
+//La consola muestra la validación
 console.log("Sistema de validación activo");
 
+//Validamos el formulario al intentar enviarlo
 function validarFormulario() {
     
     // Inicializamos el contador cada vez que se intenta enviar
@@ -28,11 +30,13 @@ function validarFormulario() {
     inputPrecio.classList.remove('error-borde');
     inputStock.classList.remove('error-borde');
 
+    //La consola muestra el valor del nombre para verificar que se captura correctamente.
     console.log("Validando datos de: " + valorNombre);
 
     // --- VALIDACIÓN DE NOMBRE ---
     if (!patronTexto.test(valorNombre)) {
         //alert("Error: el nombre debe contener letras y espacios");
+        //Muestra el error con SweetAlert.
         Swal.fire({
             icon: 'error',
             title: '¡Cuidado!',
@@ -41,6 +45,7 @@ function validarFormulario() {
         });
         errores++;
         inputNombre.style.border = "2px solid red";
+        //Si el nombre no cumple con el patrón, se agrega la clase de error para mostrar el borde rojo.
     } else if (valorNombre.length < 3) {
         alert("El nombre es muy corto (mínimo 3 caracteres)");
         errores++;
@@ -79,6 +84,7 @@ function validarFormulario() {
     // --- VALIDACIÓN DE PRECIO ---
     let precioNum = parseFloat(valorPrecio);
     if (valorPrecio === "" || isNaN(precioNum) || precioNum <= 0) {
+        //Borde rojo cuando hay error.
         inputPrecio.classList.add('error-borde');
         alert("El precio debe ser un número mayor a cero");
         errores++;
