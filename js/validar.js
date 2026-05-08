@@ -6,7 +6,7 @@ const formulario = document.getElementById('agregar_producto');
 //La consola muestra la validación
 console.log("Sistema de validación activo");
 
-//Validamos el formulario al intentar enviarlo
+//Validamos el formulario al intentar enviarlo.
 function validarFormulario() {
     
     // Inicializamos el contador cada vez que se intenta enviar
